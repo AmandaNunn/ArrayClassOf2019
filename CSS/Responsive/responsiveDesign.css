@@ -1,0 +1,79 @@
+/**
+ * Simple example of mobile-first, responsive css
+ * Mobile first simply means write your mobile styles first (meaning they are the default styles)
+ * 
+ * @author Jason Hammock
+ * @see https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+ */
+
+/* ---BEGIN MOBILE STYLES--- */
+
+/* GRID  */
+
+* {
+    box-sizing: border-box;
+}
+
+.section {
+    display: flex;
+    justify-content: center
+}
+
+.container {
+    max-width: 1200px;
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col,
+.col.is-one-quarter,
+.col.is-one-third,
+.col.is-half,
+.col.is-two-thirds,
+.col.is-three-quarters {
+    width: 100%;
+}
+
+.col {
+    margin-bottom: 10px;
+}
+
+/* ---BEGIN DESKTOP STYLES--- */
+
+@media screen and (min-width: 980px) {
+
+    /* GRID */
+    .col {
+        margin-bottom: 0;
+    }
+
+    .col.is-one-quarter {
+        width: 24%;
+    }
+
+    .col.is-one-third {
+        width: 32%;
+    }
+
+    .col.is-half {
+        width: 49%;
+    }
+
+    .col.is-two-thirds {
+        width: 65%;
+    }
+
+    .col.is-three-quarters {
+        width: 75%;
+    }
+
+    /* HELPERS */
+    .is-hidden-desktop {
+        display: none;
+    }
+}

@@ -1,0 +1,31 @@
+* {
+    font-family: 'Share Tech Mono', monospace;
+    text-transform: uppercase;
+}
+
+#width-tools {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#width-counter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#width {
+    padding-right: 10px;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+.col {
+    background: lightgrey;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px darkgrey;
+}
